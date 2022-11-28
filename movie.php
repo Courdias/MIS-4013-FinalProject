@@ -33,11 +33,10 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 ?>
   <tr>
-    <td><?=$row["section_id"]?></td>
-    <td><?=$row["prefix"]?></td>
-    <td><?=$row["number"]?></td>
-    <td><?=$row["section_number"]?></td>
-    <td><?=$row["instructor_name"]?></td>
+    <td><?=$row["movie_id"]?></td>
+    <td><?=$row["movie_name"]?></td>
+    <td><?=$row["genre_name"]?></td>
+    <td><?=$row["director_name"]?></td>
   </tr>
 <?php
   }
@@ -50,7 +49,4 @@ $conn->close();
     </table>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
-  <?php
-  include "gohomebutton.php";
-  ?>
 </html>
