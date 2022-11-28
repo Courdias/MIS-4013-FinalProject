@@ -6,9 +6,9 @@
   <thead>
     <tr>
       <th>ID</th>
+      <th>Director</th>
       <th>Name</th>
       <th>Genre</th>
-      <th>Director</th>
     </tr>
   </thead>
   <tbody>
@@ -25,7 +25,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "select movie_id, d.director_name, movie_name, g.genre, from movie m join director d on d.director_id = m.director_id join genre g on g.genre_id = m.genre_id";
+$sql = "select movie_id, d.director_name, movie_name, g.genre_name, from movie m join director d on d.director_id = m.director_id join genre g on g.genre_id = m.genre_id";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
