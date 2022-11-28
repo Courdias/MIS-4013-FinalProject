@@ -34,9 +34,9 @@ if ($result->num_rows > 0) {
 ?>
   <tr>
     <td><?=$row["movie_id"]?></td>
+    <td><?=$row["director_name"]?></td>
     <td><?=$row["movie_name"]?></td>
     <td><?=$row["genre_name"]?></td>
-    <td><?=$row["director_name"]?></td>
   </tr>
 <?php
   }
