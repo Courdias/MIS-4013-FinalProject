@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nghia's HW 6</title>
+    <title>Nghia's Final Project</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
   <body>
@@ -19,16 +19,16 @@
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="library1.php">Library 1</a>
+          <a class="nav-link active" aria-current="page" href="movie.php">Movies</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="library2.php">Library 2</a>
+          <a class="nav-link active" aria-current="page" href="genre.php">Genres</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="library3.php">Library 3</a>
+          <a class="nav-link active" aria-current="page" href="director.php">Directors</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="library4.php">Library 4</a>
+          <a class="nav-link active" aria-current="page" href="library4.php">Author Recommendations</a>
         </li>
 
         <li class="nav-item dropdown">
@@ -55,6 +55,6 @@
 </nav>
     <div class="card">
   <div class="card-body">
-    Welcome to Nghia's MIS 4013 HW 6.
+    Welcome to Nghia's MIS 4013 Final Project.
   </div>
 </div>
