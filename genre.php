@@ -34,7 +34,7 @@ if ($result->num_rows > 0) {
 ?>
   <tr>
     <td><?=$row["genre_id"]?></td>
-    <td><?=$row["name"]?></td>
+    <td><?=$row["genre_name"]?></td>
     <td><?=$row["description"]?></td>
     <td>
       <form method="post" action="genre-movie.php">
