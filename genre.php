@@ -37,8 +37,8 @@ if ($result->num_rows > 0) {
     <td><?=$row["name"]?></td>
     <td><?=$row["description"]?></td>
     <td>
-      <form method="post" action="course-section.php">
-        <input type="hidden" name="id" value="<?=$row["course_id"]?>" />
+      <form method="post" action="genre-movie.php">
+        <input type="hidden" name="id" value="<?=$row["genre_id"]?>" />
         <input type="submit" value="Sections" />
       </form>
     </td>
