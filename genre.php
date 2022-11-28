@@ -15,7 +15,7 @@
     <?php
 $servername = "localhost";
 $username = "buidemac_finalproject";
-$password = "finalmovies1234";
+$password = "finalmovies123";
 $dbname = "buidemac_movies";
 
 // Create connection
