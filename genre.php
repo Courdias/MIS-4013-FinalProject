@@ -39,7 +39,7 @@ if ($result->num_rows > 0) {
     <td>
       <form method="post" action="genre-movie.php">
         <input type="hidden" name="id" value="<?=$row["genre_id"]?>" />
-        <input type="submit" value="Sections" />
+        <input type="submit" value="Movies with this genre" />
       </form>
     </td>
   </tr>
