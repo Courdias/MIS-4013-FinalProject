@@ -6,8 +6,8 @@
   <thead>
     <tr>
       <th>ID</th>
-      <th>Director</th>
       <th>Name</th>
+      <th>Director</th>
       <th>Genre</th>
     </tr>
   </thead>
