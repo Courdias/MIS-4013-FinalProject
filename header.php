@@ -19,16 +19,16 @@
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="movie.php">Movies</a>
+          <a class="nav-link active" aria-current="page" href="movie.php">All Movie Reviews</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="genre.php">Genres</a>
+          <a class="nav-link active" aria-current="page" href="genre.php">Reviews by Genres</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="director.php">Directors</a>
+          <a class="nav-link active" aria-current="page" href="director.php">Reviews by Directors</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="library4.php">Author Recommendations</a>
+          <a class="nav-link active" aria-current="page" href="contact.php">Contact Us</a>
         </li>
 
         <li class="nav-item dropdown">
