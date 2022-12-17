@@ -6,10 +6,10 @@
   <thead>
     <tr>
       <th>ID</th>
-      <th>Name</th>
+      <th>Movie Name</th>
       <th>Director</th>
       <th>Genre</th>
-      <th>Latest User's Rating</th>
+      <th>Latest User's Rating of the Movie</th>
     </tr>
   </thead>
   <tbody>
@@ -49,7 +49,7 @@ if ($result->num_rows > 0) {
     <td><?=$row["movie_rating"]?></td>
     <td>
               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editRating<?=$row["movie_id"]?>">
-                Edit
+                Edit Movie Rating
               </button>
               <div class="modal fade" id="editRating<?=$row["movie_id"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editRating<?=$row["movie_id"]?>Label" aria-hidden="true">
                 <div class="modal-dialog">
