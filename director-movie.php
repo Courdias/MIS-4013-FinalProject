@@ -9,6 +9,7 @@
       <th>Name</th>
       <th>Director</th>
       <th>Genre</th>
+      <th>Latest User's Rating of the Movie</th>
     </tr>
   </thead>
   <tbody>
@@ -26,7 +27,7 @@ if ($conn->connect_error) {
 }
 $iid = $_GET['id'];
 //echo $iid;
-$sql = "select movie_id, movie_name, d.director_name, g.genre_name from movie m join director d on d.director_id = m.director_id join genre g on g.genre_id = m.genre_id where d.director_id=" . $iid;
+$sql = "select movie_id, movie_name, movie_rating, d.director_name, g.genre_name from movie m join director d on d.director_id = m.director_id join genre g on g.genre_id = m.genre_id where d.director_id=" . $iid;
 //echo $sql;
     $result = $conn->query($sql);
 
@@ -39,6 +40,8 @@ if ($result->num_rows > 0) {
     <td><?=$row["movie_name"]?></td>
     <td><?=$row["director_name"]?></td>
     <td><?=$row["genre_name"]?></td>
+    <td><?=$row["movie_rating"]?></td>
+
   </tr>
 <?php
   }
