@@ -55,15 +55,15 @@ if ($result->num_rows > 0) {
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="editRating<?=$row["movie_id"]?>Label">Edit Student</h1>
+                      <h1 class="modal-title fs-5" id="editRating<?=$row["movie_id"]?>Label">Edit Movie Rating</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       <form method="post" action="">
                         <div class="mb-3">
-                          <label for="editRating<?=$row["movie_id"]?>Name" class="form-label">Name</label>
+                          <label for="editRating<?=$row["movie_id"]?>Name" class="form-label">Latest User's Rating</label>
                           <input type="text" class="form-control" id="editRating<?=$row["movie_id"]?>Name" aria-describedby="editRating<?=$row["movie_id"]?>Help" name="mRating" value="<?=$row['movie_rating']?>">
-                          <div id="editRating<?=$row["movie_id"]?>Help" class="form-text">Enter the rating's name.</div>
+                          <div id="editRating<?=$row["movie_id"]?>Help" class="form-text">Enter your new rating.</div>
                         </div>
                         <input type="hidden" name="mid" value="<?=$row['movie_id']?>">
                         <input type="hidden" name="saveType" value="Edit">
