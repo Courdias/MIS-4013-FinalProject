@@ -63,7 +63,7 @@ if ($result->num_rows > 0) {
                         <div class="mb-3">
                           <label for="editRating<?=$row["movie_id"]?>Name" class="form-label">Latest User's Rating</label>
                           <input type="text" class="form-control" id="editRating<?=$row["movie_id"]?>Name" aria-describedby="editRating<?=$row["movie_id"]?>Help" name="mRating" value="<?=$row['movie_rating']?>">
-                          <div id="editRating<?=$row["movie_id"]?>Help" class="form-text">Enter your new rating.</div>
+                          <div id="editRating<?=$row["movie_id"]?>Help" class="form-text">Enter your new rating (1-10).</div>
                         </div>
                         <input type="hidden" name="mid" value="<?=$row['movie_id']?>">
                         <input type="hidden" name="saveType" value="Edit">
