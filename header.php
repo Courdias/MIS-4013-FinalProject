@@ -27,24 +27,7 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="director.php">Reviews by Directors</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="contact.php">Contact Us</a>
-        </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Non-Relevant Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="index.php">Not apart of Assignment</a></li>
-            <li><a class="dropdown-item" href="#">Not apart of the assignment</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
