@@ -29,7 +29,7 @@ if ($conn->connect_error) {
     case 'Edit':
       $sqlEdit = "update movie set movie_rating=? where movie_id=?";
       $stmtEdit = $conn->prepare($sqlEdit);
-      $stmtEdit->bind_param("i", $_POST['mRating'], $_POST['mid']);
+      $stmtEdit->bind_param("ii", $_POST['mRating'], $_POST['mid']);
       $stmtEdit->execute();
       echo '<div class="alert alert-success" role="alert">Instructor edited.</div>';
       break;
