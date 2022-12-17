@@ -25,7 +25,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "select movie_id, movie_name, d.director_name, g.genre_name, from movie m join director d on d.director_id = m.instructor_id join genre g on g.genre_id = m.course_id";
+$sql = "select * from movie";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
