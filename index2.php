@@ -1,13 +1,19 @@
 <?php
   include "header.php";
 ?>
-<div>This is the home page for Final. Navigate to the other pages featuring Javascript libraries in the navbar above!</div>
-<h3>Featured Movie Review title<h3>
+<div>This is the home page for Final. 
+  Welcome new users! Feel free to explore around and add, edit, or delete any entries from the database.
   
-  <h6> Directed by: <a href="director.php" target="_blank">"director name here"</a> / Genre:  <a href="genre.php" target="_blank">"genre name here"</a>
-  <h1> Movie Image here<h1>
-    <div> review text here</div>
-    <div> comments left by other users here<div>
+  For Dr. Bellah,
+  Here is a checksheet of things that should earn all my points, and where they are:
+  Functionality ("The Back" side)
+  HW 1: Bootstrap & # of Webpages
+  HW 2: Get and Post
+  HW 3: Database Tables, Related Tables, Hyperlink & Post
+  Hw 4: Add, Edit, Delete Functionalities
+  HW 5: Javascript Functions
+  Hw 6: Javascript Libraries
+  Appearance(The "front" side)
      
   
   </body>
