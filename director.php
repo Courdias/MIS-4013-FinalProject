@@ -40,6 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 <div>Feel free to add directors whose movies you want to get featured!</div>
+<div>Click on their names to see which movies that they directed that have been added on this site.</div>
 </hr>
       <h1>Directors</h1>
 <table class="table table-striped">
