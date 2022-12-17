@@ -31,7 +31,7 @@ if ($conn->connect_error) {
       $stmtEdit = $conn->prepare($sqlEdit);
       $stmtEdit->bind_param("ii", $_POST['mRating'], $_POST['mid']);
       $stmtEdit->execute();
-      echo '<div class="alert alert-success" role="alert">Instructor edited.</div>';
+      echo '<div class="alert alert-success" role="alert">Latest User''s Rating edited.</div>';
       break;
   }
 }
