@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       echo '<div class="alert alert-success" role="alert">Movie Rating edited.</div>';
       break;
   }
-
+}
 $sql = "select movie_id, movie_name, d.director_name, g.genre_name from movie m join director d on d.director_id = m.director_id join genre g on g.genre_id = m.genre_id";
 $result = $conn->query($sql);
 
