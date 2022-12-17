@@ -36,11 +36,10 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 ?>
   <tr>
-    <td><?=$row["section_id"]?></td>
-    <td><?=$row["prefix"]?></td>
-    <td><?=$row["number"]?></td>
-    <td><?=$row["section_number"]?></td>
-    <td><?=$row["instructor_name"]?></td>
+    <td><?=$row["movie_id"]?></td>
+    <td><?=$row["movie_name"]?></td>
+    <td><?=$row["director_name"]?></td>
+    <td><?=$row["genre_name"]?></td>
   </tr>
 <?php
   }
