@@ -24,7 +24,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-$sql = "select movie_id, movie_name, movie_rating d.director_name, g.genre_name from movie m join director d on d.director_id = m.director_id join genre g on g.genre_id = m.genre_id";
+$sql = "select movie_id, movie_name,  d.director_name, g.genre_name from movie m join director d on d.director_id = m.director_id join genre g on g.genre_id = m.genre_id";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   // output data of each row
