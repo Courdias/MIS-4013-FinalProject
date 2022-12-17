@@ -29,7 +29,7 @@ if ($conn->connect_error) {
     case 'Edit':
       $sqlEdit = "update movie set movie_rating=? where movie_id=?";
       $stmtEdit = $conn->prepare($sqlEdit);
-      $stmtEdit->bind_param("i", $_POST['mRating']);
+      $stmtEdit->bind_param("i", $_POST['mRating'], $_POST['mid']);
       $stmtEdit->execute();
       echo '<div class="alert alert-success" role="alert">Instructor edited.</div>';
       break;
@@ -65,7 +65,7 @@ if ($result->num_rows > 0) {
                           <input type="text" class="form-control" id="editRating<?=$row["movie_id"]?>Name" aria-describedby="editRating<?=$row["movie_id"]?>Help" name="mRating" value="<?=$row['movie_rating']?>">
                           <div id="editRating<?=$row["movie_id"]?>Help" class="form-text">Enter the rating's name.</div>
                         </div>
-                        <input type="hidden" name="mRating" value="<?=$row['movie_id']?>">
+                        <input type="hidden" name="mid" value="<?=$row['movie_id']?>">
                         <input type="hidden" name="saveType" value="Edit">
                         <input type="submit" class="btn btn-primary" value="Submit">
                       </form>
