@@ -47,6 +47,7 @@ if ($result->num_rows > 0) {
     <td><?=$row["director_name"]?></td>
     <td><?=$row["genre_name"]?></td>
     <td><?=$row["movie_rating"]?></td>
+    <td>
     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editInstructor<?=$row["instructor_id"]?>">
                 Edit
               </button>
